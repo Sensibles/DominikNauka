@@ -1,7 +1,15 @@
 package pl.dominik.nauka.model;
 
-public interface Post {
-    void addAuthor(String author);
-    void addText(String text);
+import java.util.List;
+
+
+public interface Post extends Comparable<Post> {
+    void setAuthor(String author);
+    void setText(String text);
     String displayPost();
+    void addLike(String user);
+    int countLikes();
+    List<String> displayLikers();
+    String getFirstLikerAlphabetically();
+
 }
