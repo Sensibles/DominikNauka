@@ -11,5 +11,5 @@ public interface Post extends Comparable<Post> {
     int countLikes();
     List<String> displayLikers();
     String getFirstLikerAlphabetically();
-
+    String getAuthor();
 }

@@ -48,6 +48,11 @@ public class PostImpl implements Post {
     }
 
     @Override
+    public String getAuthor() {
+        return this.author;
+    }
+
+    @Override
     public int compareTo(Post o) {
         int myLikes = this.countLikes();
         int likesFromOtherPosts = o.countLikes();
