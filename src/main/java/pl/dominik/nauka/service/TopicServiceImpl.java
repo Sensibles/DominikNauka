@@ -37,5 +37,16 @@ public class TopicServiceImpl implements TopicService{
         
     }
 
+    @Override
+    public int getSumOfAllLikes() {
+        return 0;
+    }
+
+    //Robiles to juz uzywajac list.sort() i compareTo. Teraz zrob to uzywajac zwyklej petli for / foreach :)
+    @Override
+    public Post getMostLikedPost() {
+        return null;
+    }
+
 
 }

@@ -9,4 +9,6 @@ public interface TopicService {
     void addPost(Post post);
     List<Post> getPosts();
     Post getPostOfAuthor(String author);
+    int getSumOfAllLikes();
+    Post getMostLikedPost();
 }
