@@ -37,5 +37,29 @@ public class TopicServiceImpl implements TopicService{
         
     }
 
+    @Override
+    public int getSumOfAllLikes() {
+        int sumOfLikes = 0;
+        for (int i=0; i<posts.size(); i++)
+        {
+            sumOfLikes += posts.get(i).countLikes();
+
+
+        }
+        return sumOfLikes;
+    }
+
+    //Robiles to juz uzywajac list.sort() i compareTo. Teraz zrob to uzywajac zwyklej petli for / foreach :)
+    @Override
+    public Post getMostLikedPost() {
+        Post max = posts.get(0);
+        for (Post x : posts)
+        {
+            if (x.countLikes() > max.countLikes())
+                max = x;
+        }
+        return max;
+    }
+
 
 }
