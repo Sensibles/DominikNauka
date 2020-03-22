@@ -11,4 +11,6 @@ public interface TopicService {
     Post getPostOfAuthor(String author);
     int getSumOfAllLikes();
     Post getMostLikedPost();
+    List<Post> bubbleSortPostsByLikes();
+    List<Post> quickSortPostsByLikes();
 }

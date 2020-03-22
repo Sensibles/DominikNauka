@@ -61,5 +61,15 @@ public class TopicServiceImpl implements TopicService{
         return max;
     }
 
+    @Override
+    public List<Post> bubbleSortPostsByLikes() {
+        //todo uzyj buuble sort
+        return null;
+    }
 
+    @Override
+    public List<Post> quickSortPostsByLikes() {
+        //todo uzyj quick sort
+        return null;
+    }
 }
